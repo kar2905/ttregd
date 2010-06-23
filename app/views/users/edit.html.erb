@@ -1,0 +1,14 @@
+<h1> Edit your details </h1>
+<% form_for(@user) do |f| -%>
+<p><%= label_tag 'Login' %><br/>
+<%= f.text_field :login %></p>
+
+<p><%= label_tag 'Regdno' %><br/>
+<%= f.text_field :regdno %></p>
+
+<p><%= label_tag 'Name' %><br/>
+<%= f.text_field :name %></p>
+
+<p><%= submit_tag 'Update' %></p>
+<p><%= link_to "Home", root_path %></p>
+<% end -%>
