@@ -1,0 +1,48 @@
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2010-06-24 12:35:42) [GET]
+Rendering template within layouts/general
+Rendering welcome/index
+Completed in 7ms (View: 4, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-06-24 12:35:45) [GET]
+Rendering template within layouts/general
+Rendering sessions/new
+Completed in 10ms (View: 6, DB: 0) | 200 OK [http://localhost/login]
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-06-24 12:35:50) [POST]
+  Parameters: {"commit"=>"Log in", "authenticity_token"=>"O86hfDbHInhosMvzoJSOpw4YGrMCttiphCYw1ebALME=", "login"=>"kar2905", "password"=>"manipal"}
+Redirected to http://localhost:3000/
+Completed in 56ms (DB: 7) | 302 Found [http://localhost/session]
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2010-06-24 12:35:51) [GET]
+Rendering template within layouts/general
+Rendering welcome/index
+Completed in 5ms (View: 4, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing UsersController#edit (for 127.0.0.1 at 2010-06-24 12:35:53) [GET]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/general
+Rendering users/edit
+Completed in 24ms (View: 5, DB: 13) | 200 OK [http://localhost/users/1/edit]
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2010-06-24 12:35:54) [GET]
+Rendering template within layouts/general
+Rendering welcome/index
+Completed in 7ms (View: 3, DB: 4) | 200 OK [http://localhost/]
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2010-06-24 12:35:55) [GET]
+Redirected to http://localhost:3000/
+Completed in 1ms (DB: 0) | 302 Found [http://localhost/logout]
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2010-06-24 12:35:55) [GET]
+Rendering template within layouts/general
+Rendering welcome/index
+Completed in 4ms (View: 4, DB: 0) | 200 OK [http://localhost/]

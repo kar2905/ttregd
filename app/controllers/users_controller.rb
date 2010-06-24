@@ -27,7 +27,12 @@ class UsersController < ApplicationController
   end
 
   def edit
+      if (self.current_user.id.to_s==params[:id])
       @user = User.find(params[:id])
+      else
+      flash[:error] ="Unauthorized access. Trying to be Smart"
+      @user= User.find(current_user.id)
+      end
   end
 
   def show
