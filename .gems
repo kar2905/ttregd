@@ -1,3 +1,3 @@
 rake
 rails
-restclient --source http://github.com/archiloque/rest-client.git
+restclient --source http://rubyforge.org/projects/rest-client/
