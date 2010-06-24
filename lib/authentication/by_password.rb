@@ -47,17 +47,17 @@ module Authentication
       end
       
       def authenticated?(password)
-        crypted_password == encrypt(password)
+        pwd == encrypt(password)
       end
       
       # before filter 
       def encrypt_password
         return if password.blank?
         self.salt = self.class.make_token if new_record?
-        self.crypted_password = encrypt(password)
+        self.pwd = encrypt(password)
       end
       def password_required?
-        crypted_password.blank? || !password.blank?
+        pwd.blank? || !password.blank?
       end
     end # instance methods
   end
