@@ -1,3 +1,2 @@
 rake
 rails
-restclient --source http://rubyforge.org/frs/download.php/67916/rest-client-1.0.4.gem
